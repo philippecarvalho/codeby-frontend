@@ -1,9 +1,9 @@
 # Teste Frond-end Jr - Codeby
 
-## Versão Mobile
+### Versão Mobile
 
-![Mobile](https://i.imgur.com/mAqaYGV.gif)
+![Mobile](https://i.imgur.com/w6mcUAO.gif)
 
-## Versão desktop
+### Versão desktop
 
 ![Desktop](https://i.imgur.com/TjUamTL.png)
