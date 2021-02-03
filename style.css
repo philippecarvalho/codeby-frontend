@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    font-size: 52px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    place-items: center;
+}
+
+header {
+    background-image: url(imgs/header-bg.png);
+    background-position: center;
+    height: 613px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    color: #fff;
+    padding: 50px 0 0 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header img {
+    margin: 0 0 50px 0;
+}
+
+header h1 {
+    font-weight: 600;
+    margin: 0 0 80px 0;
+    font-size: 62px;
+    text-align: center;
+}
+
+header .button {
+    width: 245px;
+    height: 51px;
+    background-color: #fff;
+    border: none;
+    font-weight: 600;
+    color: #383838;
+    font-size: 18px;
+    transition: all 200ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .button:hover {
+    background-color: #0088ed;
+    color: #fff;
+}
+
+header .button:active {
+    background-color: #0078d4;
+    font-size: 16px;
+}
+
+main {
+    width: 1200px;
+    padding: 20px;
+}
+
+.section-title {
+    color: #383838;
+    margin: 0 0 30px 0;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#main-container a {
+    height: 346px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 0 30px 0;
+    transition: background-size 300ms ease;
+    background-size: 103%;
+}
+
+#main-container a:hover {
+    background-size: 105%;
+}
+
+#item-1 {
+    background-image: url(imgs/item-1.png);
+    flex-grow: 0;
+    flex-basis: 32%;
+}
+
+#item-2 {
+    background-image: url(imgs/item-2.png);
+    flex-basis: 65%;
+}
+
+#item-3 {
+    background-image: url(imgs/item-3.png);
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#item-4 {
+    background-image: url(imgs/item-4.png);
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#item-5 {
+    background-image: url(imgs/item-5.png);
+    flex-basis: 32%;
+}
+
+footer {
+    width: 100%;
+    background-color: #f4f4f4;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#footer-content {
+    width: 1200px;
+    margin: 0 0 30px 0;
+}
+
+.absolute {
+    position: absolute;
+}
+
+#plan-container {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.plan {
+    background-color: #0088ed;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+}
+
+.plan-price {
+    color: #fff;
+    background-color: #005499;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-text {
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 10px 0;
+}
+
+.plan-text p {
+    width: 80%;
+    align-self: center;
+}
+
+.plan h4 {
+    font-size: 34px;
+    line-height: 1;
+}
+
+.plan h5 {
+    font-size: 20px;
+}
+
+.p100 {
+    height: 75px;
+}
+
+.p150 {
+    height: 125px;
+}
+
+.p200 {
+    height: 175px;
+}
+
+.p250 {
+    height: 225px;
+}
+
+.p300 {
+    height: 275px;
+}
+
+.p350 {
+    height: 325px;
+}
+
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2.8em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    #main-container {
+        flex-direction: column;
+    }
+
+    #main-container a {
+        height: 300px;
+        background-size: unset;
+    }
+
+    #item-1,
+    #item-2,
+    #item-3,
+    #item-4,
+    #item-5 {
+        flex-basis: auto;
+        justify-content: flex-start;
+    }
+
+    #footer-content {
+        width: 90%;
+    }
+
+    .absolute {
+        position: unset;
+    }
+
+    #plan-container {
+        flex-direction: column;
+    }
+
+    .plan {
+        margin: 0 0 20px 0;
+    }
+
+    .plan-price {
+        text-align: center;
+    }
+
+    .p100,
+    .p150,
+    .p200,
+    .p250,
+    .p300,
+    .p350 {
+        height: 60px;
+    }
+}
